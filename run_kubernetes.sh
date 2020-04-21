@@ -19,4 +19,4 @@ kubectl get pods
 
 # Step 4:
 # Forward the container port to a host
-
+kubectl port-forward imyke/flask_webapp 8000:80
