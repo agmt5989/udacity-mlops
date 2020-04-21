@@ -1,29 +1,33 @@
 [![CircleCI](https://circleci.com/gh/circleci/circleci-docs.svg?style=svg)](https://circleci.com/gh/agmt5989/udacity-mlops)
 
+# Operationalize a Machine Learning Microservices API
+
+By Mike Ajala
+
 ## Project Overview
 
-In this project, you will apply the skills you have acquired in this course to operationalize a Machine Learning Microservice API. 
+This project combined skills in Web development, Linux operation management and Cloud DevOps Engineering. 
 
-You are given a pre-trained, `sklearn` model that has been trained to predict housing prices in Boston according to several features, such as average rooms in a home and data about highway access, teacher-to-pupil ratios, and so on. You can read more about the data, which was initially taken from Kaggle, on [the data source site](https://www.kaggle.com/c/boston-housing). This project tests your ability to operationalize a Python flask app—in a provided file, `app.py`—that serves out predictions (inference) about housing prices through API calls. This project could be extended to any pre-trained machine learning model, such as those for image recognition and data labeling.
+Given a pre-trained, `sklearn` model that has been trained to predict housing prices in Boston according to several features, such as average rooms in a home and data about highway access, teacher-to-pupil ratios, and so on, I am to create a traceable, scalable deployment of the model. This project tested my ability to operationalize a Python flask app that serves out predictions (inference) about housing prices through API calls. This project could be extended to any pre-trained machine learning model, such as those for image recognition and data labeling.
 
 ### Project Tasks
 
-Your project goal is to operationalize this working, machine learning microservice using [kubernetes](https://kubernetes.io/), which is an open-source system for automating the management of containerized applications. In this project you will:
-* Test your project code using linting
-* Complete a Dockerfile to containerize this application
-* Deploy your containerized application using Docker and make a prediction
-* Improve the log statements in the source code for this application
-* Configure Kubernetes and create a Kubernetes cluster
-* Deploy a container using Kubernetes and make a prediction
-* Upload a complete Github repo with CircleCI to indicate that your code has been tested
+My goal was to operationalize this working, machine learning microservice using [kubernetes](https://kubernetes.io/), which is an open-source system for automating the management of containerized applications. 
 
-You can find a detailed [project rubric, here](https://review.udacity.com/#!/rubrics/2576/view).
+I accomplished the following tasks:
+* Tested my project code using linting for both Python and the Dockerfile
+* Completed a Dockerfile to containerize this application
+* Deployed my containerized application using Docker and make a prediction
+* Improved the log statements in the source code for this application
+* Configured Kubernetes and created a Kubernetes cluster
+* Deployed a container using Kubernetes and made a successful prediction
+* Uploaded a complete Github repo with CircleCI to indicate that your code has been tested
 
-**The final implementation of the project will showcase your abilities to operationalize production microservices.**
+## The lower level steps
 
----
+Below are the technical steps I underwent to accomplish the goals above:
 
-## Setup the Environment
+### Setup the Environment
 
 * Create a virtualenv and activate it
 * Run `make install` to install the necessary dependencies
