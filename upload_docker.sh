@@ -6,10 +6,11 @@
 # Step 1:
 # Create dockerpath
 # dockerpath=<your docker ID/path>
-dockerpath="imyke/web-app"
+dockerpath="imyke/flask_webapp"
 
 # Step 2:  
 # Authenticate & tag
+docker login
 echo "Docker ID and Image: $dockerpath"
 
 # Step 3:
