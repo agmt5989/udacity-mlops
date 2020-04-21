@@ -8,7 +8,10 @@ dockerpath="imyke/flask_webapp"
 
 # Step 2
 # Run the Docker Hub container with kubernetes
-
+kubectl run imyke/flask_webapp \
+    --generator=run-pod/v1 \
+    --image=$dockerpath \
+    --port=80 --labels app=imyke/flask_webapp
 
 # Step 3:
 # List kubernetes pods
